@@ -95,6 +95,10 @@ namedFish.location
 
 print(namedBread.location)
 
+print(namedMeat.name)
+print(namedMeat.location)
+
+
 
 
 
