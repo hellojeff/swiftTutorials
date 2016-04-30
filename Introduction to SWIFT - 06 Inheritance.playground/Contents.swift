@@ -66,16 +66,18 @@ zoomer.numberOfWheels
 class Food {
     
     var name: String
-    init(name: String) {
+    var location: String
+    init(name: String, location: String) {
         self.name = name
+        self.location = location
     }
     
     convenience init() {
-        self.init(name: "[Unnamed]")
+        self.init(name: "[Unnamed]", location: "[Not Available]")
     }
 }
 
-let namedMeat = Food(name: "Bacon")
+let namedMeat = Food(name: "Bacon", location: "Top Shelf")
 
 namedMeat.name
 
@@ -85,8 +87,10 @@ namedBread.name = "Bread"
 
 namedBread.name
 
-let namedFish = Food(name: "Tuna")
+let namedFish = Food(name: "Tuna", location: "Bottom Shelf")
 
+namedFish.name
+namedFish.location
 
 
 
