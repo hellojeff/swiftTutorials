@@ -85,6 +85,9 @@ namedBread.name = "Bread"
 
 namedBread.name
 
+let namedFish = Food(name: "Tuna")
+
+
 
 
 
